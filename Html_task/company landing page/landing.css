@@ -1,0 +1,38 @@
+header,footer{
+    font-style: italic;
+    text-align: center;
+    color: black;
+    background-image:url(./pets/petbg.jpg) ;
+}
+hr{
+    border:2px red solid;
+}
+body{
+    background-image:url("./pets/petbg2.jpg");
+    background-repeat: no-repeat;
+    height: 180vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    
+}
+ul{
+    list-style-type:none;
+    text-align: justify;
+    padding-left: 530px;
+}
+ body h1{
+    text-align: center;
+   
+ }
+ body p{
+    padding-left: 25px;
+ }
+nav{
+    padding-left: 775px;
+}
+.cos
+{
+    font-weight: bolder ;
+    
+}
