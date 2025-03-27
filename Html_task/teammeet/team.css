@@ -1,0 +1,28 @@
+.Team
+{
+    display: flex;
+    gap: 50px;
+    
+}
+.Team img {
+    width: 200px; 
+    height: 250px; 
+    
+    border-radius: 10px;
+} 
+header
+{
+    display: flex;
+    align-items:center;
+    background-color: dimgrey;
+}
+body{
+    background-color: darkgrey;
+}
+.button
+{
+    padding-left: 900px;
+}
+footer{
+    background-color: dimgray;
+}

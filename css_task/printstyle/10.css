@@ -1,0 +1,24 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Ensure text/background contrast for accessibility */
+h1, h2, p {
+    color: #000; /* High contrast for readability */
+}
+
+/* Hide navigation in print view */
+@media print {
+    .nav {
+        display: none;
+    }
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
