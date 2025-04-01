@@ -1,0 +1,26 @@
+.head{
+    display: flex;
+    align-items: center;
+}
+.g{
+    color:#4285F4;
+}
+.o1{
+    color:  #FBBC05;
+}
+.e,.o{
+    color: #EA4335;
+}
+.l{
+    color: #34A853;
+}
+body{
+    background-color:  #CCD6DD;
+    font-family: 'Are you serious';
+}
+
+.body1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

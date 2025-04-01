@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation</title>
+</head>
+<body>
+    <input type="text" id="userMessage" placeholder="Enter your message">
+    <button onclick="processMessage()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        function processMessage() {
+            let message = document.getElementById("userMessage").value.trim(); 
+
+            if (message.length === 0) {
+                alert("⚠ Please enter a message!");
+                return;
+            }
+
+            let transformedMessage = message.length < 10 ? message.toUpperCase() : message.toLowerCase();
+            
+            document.getElementById("output").innerText = "Transformed Message: " + transformedMessage;
+        }
+    </script>
+</body>
+</html>

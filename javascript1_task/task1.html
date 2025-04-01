@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Banner</title>
+</head>
+<body>
+    <div id="promoBanner">Promotional Text</div>
+
+    <script>
+        let promoBanner = document.getElementById("promoBanner");
+        let promoMessage = "Welcome! Enjoy a special discount!";
+        let discountPercent = 20;
+        let isUserLoggedIn = true;
+        if (isUserLoggedIn) {
+            promoBanner.textContent = `${promoMessage} You get ${discountPercent}% off!`;
+        } else {
+            promoBanner.textContent = "Sign in to unlock exclusive discounts!";
+        }
+        console.log(typeof promoMessage);  
+        console.log(typeof discountPercent); 
+        console.log(typeof isUserLoggedIn); 
+    </script>
+</body>
+</html>

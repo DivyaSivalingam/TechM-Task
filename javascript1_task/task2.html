@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Cart</title>
+</head>
+<body>
+    <h2>Shopping Cart Summary</h2>
+    <p id="cartSummary"></p>
+
+    <script>
+        let itemPrices = [19.99, 9.99, 4.99];
+        let totalCost = itemPrices.reduce((sum, price) => sum + price, 0);
+        let freeShippingThreshold = 30;
+        let isEligibleForFreeShipping = totalCost >= freeShippingThreshold;
+        let shippingCost = isEligibleForFreeShipping ? 0 : 5.99;
+        let finalCost = totalCost + shippingCost;
+        console.log("Item Prices:", itemPrices);
+        console.log("Total Cost:", totalCost.toFixed(2));
+        console.log("Eligible for Free Shipping:", isEligibleForFreeShipping);
+        console.log("Shipping Cost:", shippingCost.toFixed(2));
+        console.log("Final Cost:", finalCost.toFixed(2));
+
+        
+        document.getElementById("cartSummary").textContent = 
+            `Total: $${totalCost.toFixed(2)} | Shipping: $${shippingCost.toFixed(2)} | Final Cost: $${finalCost.toFixed(2)}`;
+    </script>
+</body>
+</html>

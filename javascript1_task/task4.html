@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Like System</title>
+    <style>
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            transition: 0.3s;
+        }
+        .image-container img.hover-effect {
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="https://via.placeholder.com/200" alt="Sample Image" 
+             onmouseover="applyHoverEffect(this)" 
+             onmouseout="removeHoverEffect(this)">
+        <br>
+        <button onclick="increaseLike(this)">👍 Like</button>
+        <span class="likeCount">0</span> Likes
+    </div>
+
+    <script>
+        function applyHoverEffect(img) {
+            img.classList.add("hover-effect");
+        }
+
+        function removeHoverEffect(img) {
+            img.classList.remove("hover-effect");
+        }
+
+        function increaseLike(button) {
+            let likeSpan = button.nextElementSibling; 
+            let count = parseInt(likeSpan.innerText);
+            likeSpan.innerText = count + 1;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+header h2
+{
+    padding-left: 350px;
+}
+header{
+    background-color:#e699e2;
+    color: #800080;
+   
+}
+
+.food-gallery{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    
+ } 
+
+.food-gallery img {
+    width: 150px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px;
+} 
+.names
+{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    
+} 
+
+.ident
+{
+    padding-left: 575px;
+    font-style: italic;
+}
+.recipe
+{
+    padding-left: 575px;
+    font-style: italic;
+    color: #800080;
+    background-color:#e699e2;
+}
+footer{
+    text-align: center;
+    background-color:#e699e2;
+    color: #800080;
+}
+.recipes h2
+{
+    text-align: center;
+    color: #800080;
+}

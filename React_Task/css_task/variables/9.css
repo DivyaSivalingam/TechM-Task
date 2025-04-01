@@ -1,0 +1,48 @@
+/* Default light theme */
+:root {
+    --main-bg-color: #ffffff;
+    --main-text-color: #333;
+    --button-bg-color: #007bff;
+    --button-text-color: white;
+}
+
+/* Dark theme */
+.dark-theme {
+    --main-bg-color: #333;
+    --main-text-color: #ffffff;
+    --button-bg-color: #ff6b6b;
+    --button-text-color: white;
+}
+
+/* Apply theme styles */
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Automatic dark mode with media query */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-bg-color: #333;
+        --main-text-color: #ffffff;
+        --button-bg-color: #ff6b6b;
+    }
+}
